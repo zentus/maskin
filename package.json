@@ -1,0 +1,29 @@
+{
+  "name": "maskin",
+  "version": "0.0.0",
+  "description": "A state machine constructor",
+  "main": "dist/index.js",
+	"files": [
+    "dist/index.js",
+    "readme.md"
+  ],
+  "scripts": {
+    "build": "babel ./src/index.js --out-file ./dist/index.js",
+    "test": "ava --verbose"
+  },
+	"devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.8.4",
+    "@babel/preset-env": "7.8.4",
+    "ava": "3.0.0",
+    "babel-preset-minify": "0.5.1"
+  },
+	"babel": {
+    "presets": [
+      "@babel/preset-env",
+			"minify"
+    ]
+  },
+  "author": "zentus",
+  "license": "MIT"
+}
